@@ -1,9 +1,10 @@
 echo off
-title Symphony's Portrait Publishing
+title Regnant's Portrait Publishing
 cls
-echo Convert portrait sources directory to webp for APPPBrowser and Arelith Portal Page.
+echo Convert portrait sources directory to webp for EPPP's Portrait Browser.
 echo.
 echo Featuring Google's cwebp
+echo Courtesy of Symphony
 echo.
 echo Last update to /sources directory:
 forfiles /p .. /m sources /c "cmd /c echo @file @fdate @ftime"
