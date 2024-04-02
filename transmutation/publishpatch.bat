@@ -1,10 +1,9 @@
 echo off
-title Regnant's Portrait Publishing
+title Symphony's Portrait Publishing
 cls
 echo Convert portrait sources directory to DDS and TGA for export/workshop upload.
 echo.
 echo Featuring Symmetric's nwn_crunch.exe
-echo Courtesy of Symphony
 echo.
 echo Last update to /sources directory:
 forfiles /p .. /m sources /c "cmd /c echo @file @fdate @ftime"
