@@ -15,9 +15,6 @@ The pack will continue to have new submissions added, adjustments to portraits t
 
 Note: All artwork belongs to the creators of these pieces and commissioners, and should they request them to be removed, it will be done so immediately and without question. All rights belong to those individuals entirely. 
 
-## Patch Hak
-Also available for download is a pre-compiled portraits hak file. This can be used to add all 5 sizes of DDS files to the game with only one .hak file, using the [Patch Hak](https://forums.beamdog.com/discussion/69487/nwn-ee-userpatch-ini-unofficial-faq) method. This means the only files required for install are the medium TGA portraits folder files, and one hak file.
-
 ## UHD version for 1440p and 4k
 
 This portrait pack's smallest four sizes have been scaled to double size for visual quality increases above UI Scale 1.0. Users with UI greater than 1.0 may wish to also download the [UHD Bioware Creature Portrait Override](https://neverwintervault.org/project/nwnee/images/portrait/uhd-bioware-creature-portrait-override), which similarly "upgrades" Bioware's Default Portraits to double size, matching the improved detail on Ultra High Definition monitors. Huge portraits, only visible in character creation, remain at their original resolution.
