@@ -4,7 +4,7 @@ import path from "path";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-export async function getTypes() {
+async function getTypes() {
   const directories = (await readdir(path.resolve('../sources'), { withFileTypes: true }))
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name);

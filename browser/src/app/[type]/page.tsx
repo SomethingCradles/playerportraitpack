@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function getImages(slug: string) {
+async function getImages(slug: string) {
   const images = readdirSync(path.resolve(`../sources/${slug}`), { withFileTypes: true })
     .filter(dirent => dirent.isFile() && dirent.name.match(/\**.*_l.png/))
     .map(dirent => dirent.name);
