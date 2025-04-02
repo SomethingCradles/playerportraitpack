@@ -1,0 +1,28 @@
+
+.Preview {
+  .portraitWrapper {
+    height: 200px;
+    width: 130px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .portraitShifter {
+    height: 260px;
+    width: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .portrait { flex-shrink: 0; }
+
+  .tag {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    padding: 0.25rem;
+  }
+}
