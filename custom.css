@@ -32,3 +32,8 @@
   margin-left: unset !important;
   margin-top: unset !important;
 }
+
+.jg-entry {
+  top: unset !important;
+  left: unset !important;
+}
