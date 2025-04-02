@@ -1,5 +1,6 @@
 {
   "input": "./sources",
+  "include": "**/*_l.png",
   "output": "./build_output",
   "title": "Enhanced Player Portrait Pack Browser",
   "sort-albums-by": "title",
