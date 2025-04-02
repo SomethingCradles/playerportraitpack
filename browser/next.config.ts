@@ -2,7 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  images: {
+  basePath: '/playerportraitpack'
+,  images: {
     remotePatterns: [
       {
         protocol: 'https',
