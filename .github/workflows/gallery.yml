@@ -3,35 +3,69 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
+
 permissions:
-  id-token: write
-  actions: write
+  contents: read
   pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  deploy:
-    name: Publish Gallery to Github Pages
+  build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./browser
+
     steps:
       - name: Checkout 🛎️
-        uses:  actions/checkout@v4
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
         with:
-          persist-credentials: false
-      - name: Build Gallery 🔧
-        run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "cd /work/ && thumbsup --config gallery-config.json"
-      - name: Package and upload artifact 📦
+          node-version: 22
+
+      - name: Cache dependencies ⚡
+        id: cache_dependencies
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies 🔧
+        shell: bash
+        if: steps.cache_dependencies.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Setup Pages ⚙️
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+
+      - name: Build with Next.js 🏗️
+        run: npx next build
+
+      - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build_output'
-          name: gh-pages
-      - name: Deploy to Github Pages 🚀
+          path: ./browser/out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+    defaults:
+      run:
+        working-directory: ./browser
+
+    steps:
+      - name: Publish to GitHub Pages 🚀
+        id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Delete artifact 🗑️
-        uses: geekyeggo/delete-artifact@v4
-        with:
-          name: gh-pages
