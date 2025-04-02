@@ -1,1 +1,34 @@
 /* Your custom styles goes here */
+
+.justified-gallery {
+  height: unset !important;
+}
+
+.justified-gallery > a, .justified-gallery > div, .justified-gallery > figure {
+  position: relative !important;;
+}
+
+.albumList {
+  width: unset !important;
+  height: unset !important;
+  top: unset !important;
+  left: unset !important;
+  position: relative;
+  margin: 3px !important;
+}
+
+.albumList > a {
+  display: block;
+  height: calc(244px * 0.8);
+  width: calc(250px * 0.512);
+  overflow: hidden;
+}
+
+.albumList > a img {
+  position: absolute;
+  top: 0 !important;
+  left: unset !important;
+  width: 100%;
+  margin-left: unset !important;
+  margin-top: unset !important;
+}
