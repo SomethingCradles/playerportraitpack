@@ -1,13 +1,27 @@
+'use client';
+
 import Image from "next/image";
 
 import styles from "./component.module.css";
+import { Dispatch, SetStateAction } from "react";
 
 const Preview = ({
-  source, tag
+  source, tag, index, activate
 }: {
   source: string,
   tag: string,
+  index: number,
+  activate: Dispatch<SetStateAction<number | false>>
+
 }) => {
+  const onTagClick = () => {
+    try {
+      navigator.clipboard.writeText(tag);
+    } catch {
+      document.execCommand('copy', false, tag);
+    }
+  }
+
   return (
     <div className={styles.Preview}>
       <div className={styles.portraitWrapper}>
@@ -19,11 +33,12 @@ const Preview = ({
             width={130}
             height={260}
             priority
+            onClick={() => activate(index)}
           />
         </div>
       </div>
 
-      <div className={styles.tag}>{tag}</div>
+      <div onClick={onTagClick} className={styles.tag}>{tag}</div>
     </div>
   );
 }

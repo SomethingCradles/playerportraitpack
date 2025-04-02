@@ -13,7 +13,10 @@
 html,
 body {
   max-width: 100vw;
+  height: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -36,21 +39,25 @@ a {
   text-decoration: none;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+body {
+  > nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-transform: capitalize;
+  }
 
-footer {
-  text-align: center;
-}
+  > footer {
+    text-align: center;
+    margin-top: auto;
+  }
 
-nav, footer {
-  width: 100%;
-  background-color: #171717;
-  padding: 1rem 2rem;
+  > nav, > footer {
+    width: 100%;
+    background-color: #171717;
+    padding: 1rem 2rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

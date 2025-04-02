@@ -1,8 +1,9 @@
-import styles from "./page.module.css";
-import { readdir } from "fs/promises";
 import path from "path";
 import { readdirSync } from "fs";
-import Preview from "../components/Preview";
+import { readdir } from "fs/promises";
+
+import styles from "./page.module.css";
+import Viewer from "./components/Viewer";
 
 export async function generateStaticParams() {
   const directories = (await readdir(path.resolve('../sources'), { withFileTypes: true }))
@@ -31,17 +32,9 @@ export default async function Type({
 
   const images = await getImages(type);
 
-  console.log(type, images);
-
   return (
     <main className={styles.Inset}>
-      {images.map((image) => (
-        <Preview
-          key={image}
-          source={`https://raw.githubusercontent.com/RegnantPhoenix/playerportraitpack/refs/heads/master/sources/${type}/${image}`}
-          tag={image.replace('l.png', '')}
-        />
-      ))}
+      <Viewer images={images} type={type} />
     </main>
   );
 }
