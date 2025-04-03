@@ -17,7 +17,7 @@ const Gallery = ({active, images, type, onClose}: {
   onClose: Dispatch<SetStateAction<number | false>>,
 }) => {
   const items = images.map((image) => ({
-    src: `https://raw.githubusercontent.com/RegnantPhoenix/playerportraitpack/refs/heads/master/sources/${type}/${image.replace('l.png', 'h.png')}`,
+    src: `https://raw.githubusercontent.com/RegnantPhoenix/playerportraitpack/refs/heads/master/sources/${type}/${image}`,
     description: image.replace('l.png', ''),
   }))
 
