@@ -33,8 +33,8 @@ jobs:
         id: cache_dependencies
         uses: actions/cache@v3
         with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('package-lock.json') }}
+          path: browser/node_modules
+          key: node-modules-${{ hashFiles('browser/package-lock.json') }}
 
       - name: Install dependencies 🔧
         shell: bash
