@@ -17,7 +17,7 @@ const Gallery = ({active, images, type, onClose}: {
   onClose: Dispatch<SetStateAction<number | false>>,
 }) => {
   const items = images.map((image) => ({
-    src: `https://raw.githubusercontent.com/RegnantPhoenix/playerportraitpack/refs/heads/master/sources/${type}/${image}`,
+    src: `https://raw.githubusercontent.com/RegnantPhoenix/playerportraitpack/refs/heads/master/sources/${type}/${image.replace('l.png', 'h.png')}`,
     description: image.replace('l.png', ''),
   }))
 
@@ -26,7 +26,6 @@ const Gallery = ({active, images, type, onClose}: {
       open={!!active}
       close={() => onClose(false)}
       index={!active ? 0 : active}
-      // ref={control}
       slides={items}
       plugins={[Captions, Thumbnails]}
       captions={{descriptionTextAlign: 'center'}}

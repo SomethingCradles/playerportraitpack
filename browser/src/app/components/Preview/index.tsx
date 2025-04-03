@@ -38,7 +38,7 @@ const Preview = ({
         </div>
       </div>
 
-      <div onClick={onTagClick} className={styles.tag}>{tag}</div>
+      <div onClick={onTagClick} className={styles.tag} title="Click to copy">{tag}</div>
     </div>
   );
 }
