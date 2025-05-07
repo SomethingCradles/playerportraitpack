@@ -8,6 +8,15 @@ echo.
 echo Last update to /sources directory:
 forfiles /p .. /m sources /c "cmd /c echo @file @fdate @ftime"
 echo.
+echo Checking if publishing folder exists..
+echo.
+IF NOT EXIST "..\Enhanced Player Portrait Pack\override" (
+    mkdir "..\Enhanced Player Portrait Pack\override"
+    echo Directory created: "..\Enhanced Player Portrait Pack\override"
+) ELSE (
+    echo Directory already exists: "..\Enhanced Player Portrait Pack\override"
+)
+echo.
 echo Ready to convert sources to DDS
 pause
 echo Converting to DDS
