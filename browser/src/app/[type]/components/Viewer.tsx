@@ -12,7 +12,7 @@ const Viewer = ({images, type}: { images: string[], type: string }) => {
       {images.map((image, index) => (
         <Preview
           key={image}
-          source={`https://raw.githubusercontent.com/RegnantPhoenix/playerportraitpack/refs/heads/master/sources/${type}/${image}`}
+          source={`https://raw.githubusercontent.com/SomethingCradles/playerportraitpack/refs/heads/master/sources/${type}/${image}`}
           tag={image.replace('l.png', '')}
           index={index}
           activate={setActive}
