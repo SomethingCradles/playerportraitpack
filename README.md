@@ -7,7 +7,7 @@ Players are encouraged to submit their portrait images to our [Discord server](h
 
 ## Packaging
 
-The project has been expanded from the popular [Steam Workshop package](https://steamcommunity.com/sharedfiles/filedetails/?id=2834893651) to [Neverwinter Vault](https://neverwintervault.org/) to enable GOG and Beamdog Client players to install the pack as well. However, since the portrait folder installation is the "normal" way to add portraits to Neverwinter Nights, this method will work for NWN:EE from the Beamdog Client, GOG, and Steam, on Windows, Mac, and Linux.
+The project has been expanded from the popular [Steam Workshop package](https://steamcommunity.com/sharedfiles/filedetails/?id=3477636794) to [Neverwinter Vault](https://neverwintervault.org/) to enable GOG and Beamdog Client players to install the pack as well. However, since the portrait folder installation is the "normal" way to add portraits to Neverwinter Nights, this method will work for NWN:EE from the Beamdog Client, GOG, and Steam, on Windows, Mac, and Linux.
 
 Full size portraits, and their portrait resrefs, are viewable (as .webp files) at the [Enhanced Player Portrait Pack Browser](https://somethingcradles.github.io/playerportraitpack)
 
