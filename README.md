@@ -3,7 +3,7 @@ The Enhanced Player Portrait pack is a community-driven and curated project to p
 
 A broad spectrum of ethnicities, as well as the following fantasy races are included: Aasimar, Avariel, Aquatic Elves, Air Genasi, Derro, Deep Imaskari, Drow, Duergar, Dwarves, Earth Genasi, Elves/Half-Elves, Fey, Fire Genasi, Gnolls, Gnomes, Goblins,  Hobgoblins, Halflings, Half-Orcs, Humans, Imps, Kobolds, Minotaurs, Ogres, Rakshasa, Svirfneblin, Tieflings, Troglodytes Vampires, Water Genasi and Yuan-Ti. The pack’s overall look is a high quality painterly style, as such it does not allow anime, cartoony or low quality images.
 
-Players are encouraged to submit their portrait images to our [Discord server](https://discord.gg/VrbfYTa).
+Players are encouraged to submit their portrait images to our [Discord server](https://discord.gg/Wns4rwumkM ).
 
 ## Packaging
 
