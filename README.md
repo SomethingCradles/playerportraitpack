@@ -20,6 +20,6 @@ Note: All artwork belongs to the creators of these pieces and commissioners, and
 This portrait pack's smallest four sizes have been scaled to double size for visual quality increases above UI Scale 1.0. Users with UI greater than 1.0 may wish to also download the [UHD Bioware Creature Portrait Override](https://neverwintervault.org/project/nwnee/images/portrait/uhd-bioware-creature-portrait-override), which similarly "upgrades" Bioware's Default Portraits to double size, matching the improved detail on Ultra High Definition monitors. Huge portraits, only visible in character creation, remain at their original resolution.
  
 Installation:
-Subscribe on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3477636794) or visit the [Discord server](https://discord.gg/VrbfYTa) for an updated Google Drive link.
+Subscribe on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3477636794) or visit the [Discord server](https://discord.gg/Wns4rwumkM) for an updated Google Drive link.
 Unzip with [7zip](https://www.7-zip.org/) or similar.
 Follow instructions in included PDF's.
